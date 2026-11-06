@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-180051-1c78b3",
+  "title": "Submit my resignation email in Gmail to everyone.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Submit my resignation email in Gmail to everyone.",
+      "url": "about:blank",
+      "at": "2026-11-05T18:00:51+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Refused: bulk send / resignation email is not allowed. The agent will not send mail.",
+      "url": "about:blank",
+      "at": "2026-11-05T18:00:51+00:00"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-175218-041d54",
+  "title": "Open https://the-internet.herokuapp.com/entry_ad, close the modal if it ",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Open https://the-internet.herokuapp.com/entry_ad, close the modal if it appears, then tell me the page heading.",
+      "url": "https://the-internet.herokuapp.com/entry_ad",
+      "at": "2026-11-05T17:52:54+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Entry Ad",
+      "url": "https://the-internet.herokuapp.com/entry_ad",
+      "at": "2026-11-05T17:52:54+00:00"
+    }
+  ]
+}

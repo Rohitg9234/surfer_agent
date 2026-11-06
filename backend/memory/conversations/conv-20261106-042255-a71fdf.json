@@ -1,0 +1,104 @@
+{
+  "id": "conv-20261106-042255-a71fdf",
+  "title": "can you surf on google and tell one alive species which is very large on",
+  "messages": [
+    {
+      "role": "user",
+      "content": "can you surf on google and tell one alive species which is very large on earth",
+      "url": "https://en.wikipedia.org/wiki/Largest_organisms",
+      "at": "2026-11-06T04:26:15+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Blue whale (largest animal ever to exist, per Wikipedia Largest organisms)",
+      "url": "https://en.wikipedia.org/wiki/Largest_organisms",
+      "at": "2026-11-06T04:26:15+00:00",
+      "trace": [
+        {
+          "index": 1,
+          "name": "search",
+          "args": {
+            "query": "largest living species on Earth"
+          },
+          "status": "ok",
+          "detail": "Opened DuckDuckGo search for 'largest living species on Earth'. Click one of these results: DuckDuckGo home; Search Assist; Wikipedia; montrealsciencecentre.com; Search domain en.wikipedia.org. changed: url -> https://duckduckgo.com/?q=larg"
+        },
+        {
+          "index": 2,
+          "name": "click_text",
+          "args": {
+            "text": "Largest organisms - Wikipedia"
+          },
+          "status": "ok",
+          "detail": "Clicked 'Largest organisms - Wikipedia'. settled changed: url https://duckduckgo.com/?q=largest+living+species+on+Earth&ia=web -> https://en.wikipedia.org/wiki/Largest_organisms; title 'largest living species on Earth at DuckDuckGo' -> 'Lar"
+        },
+        {
+          "index": 3,
+          "name": "note",
+          "args": {
+            "text": "Blue whale is the largest animal ever to exist (from Wikipedia Largest organisms page)"
+          },
+          "status": "ok",
+          "detail": "Noted"
+        },
+        {
+          "index": 4,
+          "name": "done",
+          "args": {
+            "answer": "Blue whale (largest animal ever to exist, per Wikipedia Largest organisms)"
+          },
+          "status": "ok",
+          "detail": "Blue whale (largest animal ever to exist, per Wikipedia Largest organisms)"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "can you surf on google and tell one alive species which is very large on earth",
+      "url": "https://www.google.com/search?q=largest+living+reptile+on+earth",
+      "at": "2026-11-06T04:28:25+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Saltwater crocodile (largest living reptile on Earth)",
+      "url": "https://www.google.com/search?q=largest+living+reptile+on+earth",
+      "at": "2026-11-06T04:28:25+00:00",
+      "trace": [
+        {
+          "index": 1,
+          "name": "goto",
+          "args": {
+            "url": "https://www.google.com/search?q=largest+living+species+on+earth"
+          },
+          "status": "ok",
+          "detail": "Navigated to https://www.google.com/search?q=largest+living+species+on+earth changed: url https://en.wikipedia.org/wiki/Largest_organisms -> https://www.google.com/search?q=largest+living+species+on+earth; title 'Largest organisms - Wikiped"
+        },
+        {
+          "index": 2,
+          "name": "goto",
+          "args": {
+            "url": "https://www.google.com/search?q=largest+living+reptile+on+earth"
+          },
+          "status": "ok",
+          "detail": "Navigated to https://www.google.com/search?q=largest+living+reptile+on+earth changed: url https://www.google.com/search?q=largest+living+species+on+earth -> https://www.google.com/search?q=largest+living+reptile+on+earth; title 'largest liv"
+        },
+        {
+          "index": 3,
+          "name": "done",
+          "args": {
+            "answer": "Saltwater crocodile (largest living reptile on Earth)"
+          },
+          "status": "ok",
+          "detail": "Saltwater crocodile (largest living reptile on Earth)"
+        },
+        {
+          "index": "you",
+          "name": "steer",
+          "args": {},
+          "status": "ok",
+          "detail": "can you do for reptile"
+        }
+      ]
+    }
+  ]
+}

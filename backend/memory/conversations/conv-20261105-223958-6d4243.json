@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-223958-6d4243",
+  "title": "Open https://example.com and quote the page heading.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Open https://example.com and quote the page heading.",
+      "url": "https://example.com/",
+      "at": "2026-11-05T22:40:26+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Example Domain",
+      "url": "https://example.com/",
+      "at": "2026-11-05T22:40:26+00:00"
+    }
+  ]
+}

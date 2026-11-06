@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-221144-4e0947",
+  "title": "Go to https://pypi.org/project/playwright/ and tell me the latest versio",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Go to https://pypi.org/project/playwright/ and tell me the latest version and the install command.",
+      "url": "https://pypi.org/project/playwright/",
+      "at": "2026-11-05T22:12:35+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Latest version: 1.64.1\nInstall command: pip install playwright\n(Source: https://pypi.org/project/playwright/)",
+      "url": "https://pypi.org/project/playwright/",
+      "at": "2026-11-05T22:12:35+00:00"
+    }
+  ]
+}

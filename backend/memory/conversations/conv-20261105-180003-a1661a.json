@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-180003-a1661a",
+  "title": "Open https://www.w3schools.com/html/html_forms.asp and describe each fie",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Open https://www.w3schools.com/html/html_forms.asp and describe each field in the example form.",
+      "url": "https://www.w3schools.com/html/html_forms.asp",
+      "at": "2026-11-05T18:00:50+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "The page contains several example forms demonstrating different input types. The fields (with labels and types) are:\n\n- Search field (text input)\n- First name: (text input)\n- Last name: (text input)\n- fname (text input)\n- lname (text input)\n- HTML (radio button)\n- CSS (radio button)\n- JavaScript (radio button)\n- I have a bike (checkbox)\n- I have a car (checkbox)\n- I have a boat (checkbox)\n- firstname (text input)\n\nThese match the visible examples of text fields, radio buttons, and checkboxes shown on the page (plus the site search box).",
+      "url": "https://www.w3schools.com/html/html_forms.asp",
+      "at": "2026-11-05T18:00:50+00:00"
+    }
+  ]
+}

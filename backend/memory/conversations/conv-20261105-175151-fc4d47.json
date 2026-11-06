@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-175151-fc4d47",
+  "title": "Go to https://httpbin.org/forms/post, fill the customer name with \"Test ",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Go to https://httpbin.org/forms/post, fill the customer name with \"Test User\", and tell me what you filled. Do not submit.",
+      "url": "https://httpbin.org/forms/post",
+      "at": "2026-11-05T17:52:17+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Filled \"Test User\" in the customer name field (confirmed via fill_field result and page snapshot showing textbox value \"Test User\").",
+      "url": "https://httpbin.org/forms/post",
+      "at": "2026-11-05T17:52:17+00:00"
+    }
+  ]
+}

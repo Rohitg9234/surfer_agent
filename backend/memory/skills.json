@@ -1,0 +1,576 @@
+{
+  "en.wikipedia.org": {
+    "open https://en.wikipedia.org/wiki/linkedin": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://en.wikipedia.org/wiki/LinkedIn"
+        }
+      }
+    ],
+    "open https://en.wikipedia.org/wiki/linkedin in the current tab": [
+      {
+        "name": "search_page",
+        "args": {
+          "pattern": "History",
+          "max_results": 5
+        }
+      }
+    ],
+    "open https://en.wikipedia.org/wiki/linkedin and note the final url after loading": [
+      {
+        "name": "note",
+        "args": {
+          "text": "Final URL after loading https://en.wikipedia.org/wiki/LinkedIn is https://en.wikipedia.org/wiki/LinkedIn"
+        }
+      }
+    ],
+    "open https://en.wikipedia.org/wiki/artificial_intelligence": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+        }
+      }
+    ],
+    "click one link in the first paragraph and arrive at the new page": [
+      {
+        "name": "search_page",
+        "args": {
+          "pattern": "The general problem of simulating (or creating) intelligence has been broken down into subproblems",
+          "max_results": 5
+        }
+      },
+      {
+        "name": "click_text",
+        "args": {
+          "text": "Reasoning"
+        }
+      }
+    ],
+    "open the wikipedia page for largest organisms": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://en.wikipedia.org/wiki/Largest_organisms"
+        }
+      }
+    ],
+    "extract and report the largest living species on earth from the page content": [
+      {
+        "name": "note",
+        "args": {
+          "text": "Largest living species on Earth: blue whale (largest animal ever to exist, from Largest organisms Wikipedia page)"
+        }
+      }
+    ],
+    "search google for \"largest living reptile\" and open the wikipedia list of largest reptiles page from results": [
+      {
+        "name": "search",
+        "args": {
+          "query": "largest living reptile"
+        }
+      },
+      {
+        "name": "click_text",
+        "args": {
+          "text": "List of largest reptiles"
+        }
+      }
+    ],
+    "read visible text and any sections on living/extant reptiles to identify the largest alive today": [
+      {
+        "name": "search_page",
+        "args": {
+          "pattern": "largest living OR extant OR saltwater crocodile OR leatherback",
+          "max_results": 10
+        }
+      },
+      {
+        "name": "search_page",
+        "args": {
+          "pattern": "saltwater crocodile|leatherback|extant|largest living",
+          "max_results": 10
+        }
+      },
+      {
+        "name": "note",
+        "args": {
+          "text": "From List_of_largest_reptiles Wikipedia: Saltwater crocodile is the largest extant reptile, verified up to 6.32 m (20.7 ft), considered largest living. Table: Saltwater crocodile 400-1300kg, max 2000kg, 7m. Leatherback sea turtle largest extant turtle."
+        }
+      }
+    ],
+    "open wikipedia page for 'list of largest reptiles'": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://en.wikipedia.org/wiki/List_of_largest_reptiles"
+        }
+      }
+    ],
+    "read the visible text and section on extant (living) species to identify the largest living reptile": [
+      {
+        "name": "search_page",
+        "args": {
+          "pattern": "extant OR \"largest living\" OR \"saltwater crocodile\" OR leatherback",
+          "max_results": 10
+        }
+      },
+      {
+        "name": "search_page",
+        "args": {
+          "pattern": "extant|largest living|saltwater crocodile",
+          "max_results": 10
+        }
+      }
+    ],
+    "read the section on extinct species to identify one of the largest extinct reptiles": [
+      {
+        "name": "search_page",
+        "args": {
+          "pattern": "extinct|prehistoric|largest extinct|mosasaur|dinosaur",
+          "max_results": 10
+        }
+      },
+      {
+        "name": "search_page",
+        "args": {
+          "pattern": "Mosasaurs|mosasaur|Stupendemys|Archelon|Titanoboa",
+          "max_results": 5
+        }
+      },
+      {
+        "name": "note",
+        "args": {
+          "text": "Largest extinct reptile: Mosasaurus / giant mosasaurs up to 17 m (56 ft) and 20 t (from section text on Mosasaurs)"
+        }
+      }
+    ],
+    "open https://en.wikipedia.org/wiki/list_of_academic_journals": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://en.wikipedia.org/wiki/List_of_academic_journals"
+        }
+      }
+    ],
+    "open wikipedia page for ca: a cancer journal for clinicians": [
+      {
+        "name": "search",
+        "args": {
+          "query": "CA: A Cancer Journal for Clinicians Wikipedia"
+        }
+      },
+      {
+        "name": "click_text",
+        "args": {
+          "text": "CA (journal) Wikipedia"
+        }
+      }
+    ],
+    "extract and confirm the listed journal impact factor from the page content": [
+      {
+        "name": "search_page",
+        "args": {
+          "pattern": "Impact factor",
+          "max_results": 5
+        }
+      }
+    ],
+    "navigate to https://en.wikipedia.org/wiki/largest_organisms": [
+      {
+        "name": "click_text",
+        "args": {
+          "text": "Largest organisms - Wikipedia"
+        }
+      }
+    ],
+    "from the results open the blue whale wikipedia page": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://en.wikipedia.org/wiki/Blue_whale"
+        }
+      }
+    ]
+  },
+  "github.com": {
+    "open https://github.com/microsoft/playwright": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://github.com/microsoft/playwright"
+        }
+      }
+    ],
+    "open https://github.com/explore": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://github.com/explore"
+        }
+      }
+    ],
+    "click the link for the first trending repository": [
+      {
+        "name": "click_text",
+        "args": {
+          "text": "NVIDIA / auto-ontology"
+        }
+      }
+    ],
+    "open the first trending repository shown on the page": [
+      {
+        "name": "click_text",
+        "args": {
+          "text": "NVIDIA / auto-ontology"
+        }
+      }
+    ]
+  },
+  "pypi.org": {
+    "navigate to https://pypi.org/project/playwright/": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://pypi.org/project/playwright/"
+        }
+      },
+      {
+        "name": "note",
+        "args": {
+          "text": "Latest version: 1.64.1, install command: pip install playwright from https://pypi.org/project/playwright/"
+        }
+      }
+    ],
+    "open https://pypi.org/project/playwright/": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://pypi.org/project/playwright/"
+        }
+      }
+    ]
+  },
+  "news.ycombinator.com": {
+    "open https://news.ycombinator.com": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://news.ycombinator.com"
+        }
+      }
+    ]
+  },
+  "httpbin.org": {
+    "navigate to https://httpbin.org/forms/post": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://httpbin.org/forms/post"
+        }
+      }
+    ],
+    "fill the customer name field (custname) with \"test user\"": [
+      {
+        "name": "fill_field",
+        "args": {
+          "label": "Customer name:",
+          "value": "Test User"
+        }
+      }
+    ]
+  },
+  "the-internet.herokuapp.com": {
+    "open https://the-internet.herokuapp.com/entry_ad": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://the-internet.herokuapp.com/entry_ad"
+        }
+      }
+    ],
+    "close the modal if it appears by clicking its close button": [
+      {
+        "name": "click_text",
+        "args": {
+          "text": "Close"
+        }
+      }
+    ],
+    "open https://the-internet.herokuapp.com/dynamic_loading/2": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://the-internet.herokuapp.com/dynamic_loading/2"
+        }
+      }
+    ],
+    "open https://the-internet.herokuapp.com/infinite_scroll": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://the-internet.herokuapp.com/infinite_scroll"
+        }
+      }
+    ],
+    "scroll down the page once": [
+      {
+        "name": "scroll",
+        "args": {
+          "direction": "down",
+          "pages": 1.0
+        }
+      }
+    ],
+    "scroll down the page two more times": [
+      {
+        "name": "scroll",
+        "args": {
+          "direction": "down",
+          "pages": 1.0
+        }
+      },
+      {
+        "name": "scroll",
+        "args": {
+          "direction": "down",
+          "pages": 1.0
+        }
+      }
+    ],
+    "open https://the-internet.herokuapp.com/login": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://the-internet.herokuapp.com/login"
+        }
+      }
+    ],
+    "fill the username field with tomsmith, the password field with supersecretpassword!, and submit the login form": [
+      {
+        "name": "fill_field",
+        "args": {
+          "label": "Username",
+          "value": "tom smith"
+        }
+      },
+      {
+        "name": "fill_field",
+        "args": {
+          "label": "Username",
+          "value": "tomsmith"
+        }
+      },
+      {
+        "name": "fill_field",
+        "args": {
+          "label": "Password",
+          "value": "SuperSecretPassword!"
+        }
+      },
+      {
+        "name": "click_text",
+        "args": {
+          "text": "Login"
+        }
+      }
+    ],
+    "click the start button": [
+      {
+        "name": "click_text",
+        "args": {
+          "text": "Start"
+        }
+      }
+    ],
+    "fill the username field with tomsmith and the password field with supersecretpassword!": [
+      {
+        "name": "fill_field",
+        "args": {
+          "label": "Username",
+          "value": "tomsmith"
+        }
+      },
+      {
+        "name": "fill_field",
+        "args": {
+          "label": "Password",
+          "value": "SuperSecretPassword!"
+        }
+      }
+    ],
+    "submit the login form": [
+      {
+        "name": "click_text",
+        "args": {
+          "text": "Login"
+        }
+      }
+    ]
+  },
+  "docs.python.org": {
+    "open https://docs.python.org/3/tutorial/datastructures.html": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      }
+    ]
+  },
+  "www.w3schools.com": {
+    "open https://www.w3schools.com/jsref/met_win_open.asp": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://www.w3schools.com/jsref/met_win_open.asp"
+        }
+      }
+    ],
+    "click the try it yourself button": [
+      {
+        "name": "click_text",
+        "args": {
+          "text": "Try it Yourself"
+        }
+      }
+    ],
+    "open https://www.w3schools.com/html/html_forms.asp": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://www.w3schools.com/html/html_forms.asp"
+        }
+      }
+    ]
+  },
+  "example.com": {
+    "open https://example.com": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://example.com"
+        }
+      }
+    ]
+  },
+  "mail.google.com": {
+    "open https://mail.google.com/mail/u/0/#inbox": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://mail.google.com/mail/u/0/#inbox"
+        }
+      }
+    ]
+  },
+  "www.linkedin.com": {
+    "open https://www.linkedin.com/jobs/": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://www.linkedin.com/jobs/"
+        }
+      }
+    ]
+  },
+  "trends.google.com": {
+    "on google trends page, click_text the visible link named \"daily search trends\" or \"trending searches\".": [
+      {
+        "name": "click_text",
+        "args": {
+          "text": "Trending now"
+        }
+      }
+    ]
+  },
+  "www.nvidia.com": {
+    "navigate to nvidia.com and search for \"agentic ai\"": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://www.nvidia.com"
+        }
+      },
+      {
+        "name": "search_page",
+        "args": {
+          "pattern": "search",
+          "max_results": 5
+        }
+      },
+      {
+        "name": "click_text",
+        "args": {
+          "text": "Search NVIDIA"
+        }
+      },
+      {
+        "name": "search_page",
+        "args": {
+          "pattern": "agentic AI",
+          "max_results": 10
+        }
+      }
+    ]
+  },
+  "duckduckgo.com": {
+    "open duckduckgo.com and search for \"agentic ai\"": [
+      {
+        "name": "search",
+        "args": {
+          "query": "agentic AI"
+        }
+      },
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://duckduckgo.com/?q=agentic+AI"
+        }
+      }
+    ],
+    "navigate to duckduckgo and search for \"agentic ai\"": [
+      {
+        "name": "search",
+        "args": {
+          "query": "agentic AI"
+        }
+      }
+    ],
+    "open duckduckgo.com": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://duckduckgo.com"
+        }
+      }
+    ],
+    "search for \"agentic ai\"": [
+      {
+        "name": "search",
+        "args": {
+          "query": "agentic AI"
+        }
+      }
+    ]
+  },
+  "www.google.com": {
+    "on google.com, search for \"largest animal alive today\"": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://www.google.com/search?q=largest+animal+alive+today"
+        }
+      }
+    ],
+    "open google.com and search for \"largest living species on earth\"": [
+      {
+        "name": "goto",
+        "args": {
+          "url": "https://www.google.com/search?q=largest+living+species+on+Earth"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+Where to add tools
+
+Add them in agent/tools/builtin.py. It has a template at the top. A new tool is a Pydantic args model plus one decorated function:
+
+python
+class ExtractArgs(BaseModel):
+    ref: int = Field(description="Element number to read")
+
+@tool(
+    name="read_element",
+    description="Read the full text of one element.",
+    params=ExtractArgs,
+    risk=Risk.SAFE,              # SAFE | LOW | HIGH
+    expects_page_change=False,   # read-only, so no "page didn't change" flag
+)
+async def read_element(args: ExtractArgs, ctx: ToolContext) -> str:
+    return await ctx.browser.read_element(args.ref)
+
+That is the only edit needed. The registry automatically:
+
+exposes the tool to the Executor LLM, with the schema generated from your Pydantic model;
+validates arguments before they reach the browser;
+gives the Policy gate the risk tier (HIGH always asks you first);
+tells the Verifier whether the page should change.
+
+
+

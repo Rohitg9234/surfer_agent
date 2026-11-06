@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-175416-f1be40",
+  "title": "Open https://the-internet.herokuapp.com/infinite_scroll, scroll 3 times,",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Open https://the-internet.herokuapp.com/infinite_scroll, scroll 3 times, and tell me whether new paragraphs appeared.",
+      "url": "https://the-internet.herokuapp.com/infinite_scroll",
+      "at": "2026-11-05T17:55:09+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, new paragraphs appeared after scrolling (new text on the first scroll; lengths went 4161\u21926278, then no new text on the next two scrolls).",
+      "url": "https://the-internet.herokuapp.com/infinite_scroll",
+      "at": "2026-11-05T17:55:09+00:00"
+    }
+  ]
+}

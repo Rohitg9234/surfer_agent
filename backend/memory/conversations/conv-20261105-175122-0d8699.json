@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-175122-0d8699",
+  "title": "Go to https://news.ycombinator.com and scroll until you see a post with ",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Go to https://news.ycombinator.com and scroll until you see a post with more than 200 points. Give me its title and points.",
+      "url": "https://news.ycombinator.com/",
+      "at": "2026-11-05T17:51:50+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Title: sshole (sshhole.com), Points: 1435 (first story with >200 points on https://news.ycombinator.com/)",
+      "url": "https://news.ycombinator.com/",
+      "at": "2026-11-05T17:51:50+00:00"
+    }
+  ]
+}

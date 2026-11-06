@@ -1,0 +1,158 @@
+(venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % python -m examples.run_demo --cdp "Open Wikipedia’s page for Python (programming language) and give me the first two sentences of the intro."
+Goal: Open Wikipedia’s page for Python (programming language) and give me the first two sentences of the intro.
+[1] Example Domain https://example.com/ (current)
+
+Open or click the tab in the debug Chrome window we started (not everyday Chrome). Everyday Chrome is not on port 9222.
+Then come back here and press Enter.
+Press Enter when that tab is ready… 
+Locked to this tab only: Example Domain https://example.com/
+[1] Example Domain https://example.com/ (current)
+Using grok: planner=grok-4 executor=grok-4-fast
+#1 [ok] goto{'url': 'https://en.wikipedia.org/wiki/Python_(programming_language)'}
+#2 [ok] subgoal_complete{'summary': 'Navigated to https://en.wikipedia.org/wiki/Python_(programming_language) which is the correct Wikipedia page.'}
+#3 [ok] scroll{'direction': 'down', 'pages': 3.0}
+#4 [ok] search_page{'pattern': 'Python is a high-level', 'max_results': 5}
+#5 [ok] search_page{'pattern': 'Python is a high-level, general-purpose programming language', 'max_results': 3}
+#6 [ok] search_page{'pattern': 'Python is a high-level', 'max_results': 5}
+#7 [ok] read_element{'ref': 1}
+
+SUCCESS: False | reason: stuck
+ANSWER: Stuck. Here is what I tried:
+#1 goto{'url': 'https://en.wikipedia.org/wiki/Python_(programming_language)'} -> ok: Navigated to https://en.wikipedia.org/wiki/Python_(programming_language) changed: url https://exampl
+#2 subgoal_complete{'summary': 'Navigated to https://en.wikipedia.org/wiki/Python_(programming_language) which is the correct Wikipedia page.'} -> ok: Navigated to https://en.wikipedia.org/wiki/Python_(programming_language) which is the correct Wikipe
+#3 scroll{'direction': 'down', 'pages': 3.0} -> ok: Scrolled down (3.0 page)
+#4 search_page{'pattern': 'Python is a high-level', 'max_results': 5} -> ok: Found matches for "Python is a high-level": [1] ...how See also    Computer programming portal Pytho
+#5 search_page{'pattern': 'Python is a high-level, general-purpose programming language', 'max_results': 3} -> ok: Found matches for "Python is a high-level, general-purpose programming language": [1] ...how See als
+#6 search_page{'pattern': 'Python is a high-level', 'max_results': 5} -> ok: Found matches for "Python is a high-level": [1] ...how See also    Computer programming portal Pytho
+#7 read_element{'ref': 1} -> ok: Jump to content Main menu Search Donate Create account Log in Contents hide (Top) History Design phi
+TOKENS: 26109 in / 192 out
+(venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % 
+
+venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % python -m examples.run_demo --cdp "Find the current featured article on https://en.wikipedia.org and summarize it in 3bullets."
+Goal: Find the current featured article on https://en.wikipedia.org and summarize itin 3 bullets.
+[1] Python (programming language) - Wikipedia https://en.wikipedia.org/wiki/Python_(programming_language) (current)
+
+Open or click the tab in the debug Chrome window we started (not everyday Chrome). Everyday Chrome is not on port 9222.
+Then come back here and press Enter.
+Press Enter when that tab is ready… 
+Locked to this tab only: Python (programming language) - Wikipedia https://en.wikipedia.org/wiki/Python_(programming_language)
+[1] Python (programming language) - Wikipedia https://en.wikipedia.org/wiki/Python_(programming_language) (current)
+Using grok: planner=grok-4 executor=grok-4-fast
+#1 [ok] goto{'url': 'https://en.wikipedia.org'}
+#2 [ok] subgoal_complete{'summary': 'Navigated to https://en.wikipedia.org main pageas requested.'}
+#3 [ok] search_page{'pattern': 'featured article', 'max_results': 5}
+#4 [ok] search_page{'pattern': "Today's featured article", 'max_results': 5}
+#5 [ok] search_page{'pattern': "Today's featured article", 'max_results': 10}
+#6 [ok] scroll{'direction': 'down', 'pages': 2.0}
+#7 [ok] scroll_until{'text': "Today's featured article", 'max_steps': 5}
+
+SUCCESS: False | reason: stuck
+ANSWER: Stuck. Here is what I tried:
+#1 goto{'url': 'https://en.wikipedia.org'} -> ok: Navigated to https://en.wikipedia.org/ changed: url https://en.wikipedia.org/wiki/Python_(programmin
+#2 subgoal_complete{'summary': 'Navigated to https://en.wikipedia.org main page as requested.'} -> ok: Navigated to https://en.wikipedia.org main page as requested.
+#3 search_page{'pattern': 'featured article', 'max_results': 5} -> ok: Found matchesfor "featured article": [1] ...yone can edit. 267,006 active editors7,259,670 articles
+#4 search_page{'pattern': "Today's featured article", 'max_results': 5} -> ok: Foundmatches for "Today's featured article": [1] ... that anyone can edit. 267,006 activeeditors7,
+#5 search_page{'pattern': "Today's featured article", 'max_results': 10} -> ok: Found matches for "Today's featured article": [1] ... that anyone can edit. 267,006 active editors7,
+#6 scroll{'direction': 'down', 'pages': 2.0} -> ok: Scrolled down (2.0 page)
+#7 scroll_until{'text': "Today's featured article", 'max_steps': 5} -> ok: Found "Today's featured article" after 0 scroll(s)
+TOKENS: 24345 in / 216 out
+(venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % 
+
+(venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % clear
+(venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % python -m examples.run_demo --cdp "Open https://httpbin.org/html and quote the first paragraph."
+Goal: Open https://httpbin.org/html and quote the first paragraph.
+[1] Wikipedia, the free encyclopedia https://en.wikipedia.org/wiki/Main_Page (current)
+[2] New tab chrome://new-tab-page/
+
+Open or click the tab in the debug Chrome window we started (not everyday Chrome). Everyday Chrome is not on port 9222.
+Then come back here and press Enter.
+Press Enter when that tab is ready… 
+Locked to this tab only: Wikipedia, the free encyclopedia https://en.wikipedia.org/wiki/Main_Page
+[1] Wikipedia, the free encyclopedia https://en.wikipedia.org/wiki/Main_Page (current)
+[2] New tab chrome://new-tab-page/
+Using grok: planner=grok-4 executor=grok-4-fast
+#1 [ok] goto{'url': 'https://httpbin.org/html'}
+#2 [ok] subgoal_complete{'summary': 'Navigated to https://httpbin.org/html successfully, page content is visible.'}
+#3 [ok] done{'answer': "Availing himself of the mild, summer-cool weather that now reigned in these latitudes, and in preparation for the peculiarly active pursuits shortly to be anticipated, Perth, the begrimed, blistered old blacksmith, had not removed his portable forge to the hold again, after concluding his contributory work for Ahab's leg, but still retained it on deck, fast lashed to ringbolts by the foremast; being now almost incessantly invoked by the headsmen, and harpooneers, and bowsmen to do some little job for them; altering, or repairing, or new shaping their various weapons and boat furniture. Often he would be surrounded by an eager circle, all waiting to be served; holding boat-spades, pike-heads, harpoons, and lances, and jealously watching his every sooty movement, as he toiled. Nevertheless, this old man's was a patient hammer wielded by a patient arm. No murmur, no impatience, no petulance did come from him. Silent, slow, and solemn; bowing over still further his chronically broken back, he toiled away, as if toil were life itself, and the heavy beating of his hammer the heavy beating of his heart. And so it was.—Most miserable! A peculiar walk in this old man, a certain slight but painful appearing yawing in his gait, had at an early period of the voyage excited the curiosity of the mariners. And to the importunity of their persisted questionings he had finally given in; and so it came to pass that every one now knew the shameful story of his wretched fate. Belated, and not innocently, one bitter winter's midnight, on the road running between two country towns, the blacksmith half-stupidly felt the deadly numbness stealing over him, and sought refuge in a leaning, dilapidated barn. The issue was, the loss of the extremities of both feet. Out of this revelation, part by part, at last came out the four acts of the gladness, and the one long, and as yet uncatastrophied fifth act of the grief of his life's drama. He was an old man, who, at the age of nearly sixty, had postponedly encountered that thing in sorrow's technicals called ruin. He had been an artisan of famed excellence, and with plenty to do; owned a house and garden; embraced a youthful, daughter-like, loving wife, and three blithe, ruddy children; every Sunday went to a cheerful-looking church, planted in a grove. But one night, under cover of darkness, and further concealed in a most cunning disguisement, a desperate burglar slid into his happy home, and robbed them all of everything. And darker yet to tell, the blacksmith himself did ignorantly conduct this burglar into his family's heart. It was the Bottle Conjuror! Upon the opening of that fatal cork, forth flew the fiend, and shrivelled up his home. Now, for prudent, most wise, and economic reasons, the blacksmith's shop was in the basement of his dwelling, but with a separate entrance to it; so t..."}
+
+SUCCESS: True | reason: done
+ANSWER: Availing himself of the mild, summer-cool weather that now reigned in these latitudes, and in preparation for the peculiarly active pursuits shortly to be anticipated, Perth, the begrimed, blistered old blacksmith, had not removed his portable forge to the hold again, after concluding his contributory work for Ahab's leg, but still retained it on deck, fast lashed to ringbolts by the foremast; being now almost incessantly invoked by the headsmen, and harpooneers, and bowsmen to do some little job for them; altering, or repairing, or new shaping their various weapons and boat furniture. Often he would be surrounded by an eager circle, all waiting to be served; holding boat-spades, pike-heads, harpoons, and lances, and jealously watching his every sooty movement, as he toiled. Nevertheless, this old man's was a patient hammer wielded by a patient arm. No murmur, no impatience, no petulance did come from him. Silent, slow, and solemn; bowing over still further his chronically broken back, he toiled away, as if toil were life itself, and the heavy beating of his hammer the heavy beating of his heart. And so it was.—Most miserable! A peculiar walk in this old man, a certain slight but painful appearing yawing in his gait, had at an early period of the voyage excited the curiosity of the mariners. And to the importunity of their persisted questionings he had finally given in; and so it came to pass that every one now knew the shameful story of his wretched fate. Belated, and not innocently, one bitter winter's midnight, on the road running between two country towns, the blacksmith half-stupidly felt the deadly numbness stealing over him, and sought refuge in a leaning, dilapidated barn. The issue was, the loss of the extremities of both feet. Out of this revelation, part by part, at last came out the four acts of the gladness, and the one long, and as yet uncatastrophied fifth act of the grief of his life's drama. He was an old man, who, at the age of nearly sixty, had postponedly encountered that thing in sorrow's technicals called ruin. He had been an artisan of famed excellence, and with plenty to do; owned a house and garden; embraced a youthful, daughter-like, loving wife, and three blithe, ruddy children; every Sunday went to a cheerful-looking church, planted in a grove. But one night, under cover of darkness, and further concealed in a most cunning disguisement, a desperate burglar slid into his happy home, and robbed them all of everything. And darker yet to tell, the blacksmith himself did ignorantly conduct this burglar into his family's heart. It was the Bottle Conjuror! Upon the opening of that fatal cork, forth flew the fiend, and shrivelled up his home. Now, for prudent, most wise, and economic reasons, the blacksmith's shop was in the basement of his dwelling, but with a separate entrance to it; so t...
+TOKENS: 11258 in / 724 out
+(venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % 
+(venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % python -m examples.run_demo --cdp "Go to https://news.ycombinator.com and list the titles of the top 5 stories."
+Goal: Go to https://news.ycombinator.com and list the titles of the top 5 stories.
+[1]  https://httpbin.org/html (current)
+[2] New tab chrome://new-tab-page/
+
+Open or click the tab in the debug Chrome window we started (not everyday Chrome). Everyday Chrome is not on port 9222.
+Then come back here and press Enter.
+Press Enter when that tab is ready… 
+Locked to this tab only:  https://httpbin.org/html
+[1]  https://httpbin.org/html (current)
+[2] New tab chrome://new-tab-page/
+Using grok: planner=grok-4 executor=grok-4-fast
+#1 [ok] goto{'url': 'https://news.ycombinator.com'}
+#2 [ok] subgoal_complete{'summary': 'Navigated to https://news.ycombinator.com successfully. Page content is now visible.'}
+#3 [ok] done{'answer': '1. Alpine Linux Security advisory: OpenSSH-server password authentication bypass\n2. September in Servo: <progress>, rounded rectangles, and more\n3. OpenSSH 10.6p2 Critical workaround for alpine without PAM\n4. Obscure audio codec is a perfect fit for the N64\n5. GPT-6 Astra covertly underperforms on safety research'}
+
+SUCCESS: True | reason: done
+ANSWER: 1. Alpine Linux Security advisory: OpenSSH-server password authentication bypass
+2. September in Servo: <progress>, rounded rectangles, and more
+3. OpenSSH 10.6p2 Critical workaround for alpine without PAM
+4. Obscure audio codec is a perfect fit for the N64
+5. GPT-6 Astra covertly underperforms on safety research
+TOKENS: 11188 in / 341 out
+(venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % 
+
+(venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % python -m examples.run_demo --cdp  "Open https://www.bbc.com/news and tell me the headline of the first story."
+Goal: Open https://www.bbc.com/news and tell me the headline of the first story.
+[1] Hacker News https://news.ycombinator.com/ (current)
+[2] New tab chrome://new-tab-page/
+
+Open or click the tab in the debug Chrome window we started (not everyday Chrome). Everyday Chrome is not on port 9222.
+Then come back here and press Enter.
+Press Enter when that tab is ready… 
+Locked to this tab only: Hacker News https://news.ycombinator.com/
+[1] Hacker News https://news.ycombinator.com/ (current)
+[2] New tab chrome://new-tab-page/
+Using grok: planner=grok-4 executor=grok-4-fast
+#1 [blocked] goto{'url': 'https://www.bbc.com/news'}
+#2 [ok] search{'query': 'https://www.bbc.com/news'}
+#3 [ok] click{'ref': 50}
+#4 [ok] subgoal_complete{'summary': 'Navigated to https://www.bbc.com/news successfully. Page content loaded with multiple headlines visible.'}
+#5 [ok] done{'answer': 'Russell Brand found guilty of rape and three sexual assaults (from https://www.bbc.com/news)'}
+
+SUCCESS: True | reason: done
+ANSWER: Russell Brand found guilty of rape and three sexual assaults (from https://www.bbc.com/news)
+TOKENS: 19308 in / 162 out
+(venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % 
+
+(venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % python -m examples.run_demo --cdp "Open https://www.bbc.com/news and tell me the headline of the first story."
+Goal: Open https://www.bbc.com/news and tell me the headline of the first story.
+[1] Hacker News https://news.ycombinator.com/ (current)
+[2] New tab chrome://new-tab-page/
+
+Open or click the tab in the debug Chrome window we started (not everyday Chrome). Everyday Chrome is not on port 9222.
+Then come back here and press Enter.
+Press Enter when that tab is ready… 
+Locked to this tab only: Hacker News https://news.ycombinator.com/
+[1] Hacker News https://news.ycombinator.com/ (current)
+[2] New tab chrome://new-tab-page/
+Using grok: planner=grok-4 executor=grok-4-fast
+#1 [blocked] goto{'url': 'https://www.bbc.com/news'}
+#2 [ok] search{'query': 'https://www.bbc.com/news'}
+#3 [ok] click{'ref': 50}
+#4 [ok] subgoal_complete{'summary': 'Navigated to https://www.bbc.com/news successfully. Page content loaded with multiple headlines visible.'}
+#5 [ok] done{'answer': 'Russell Brand found guilty of rape and three sexual assaults(from https://www.bbc.com/news)'}
+
+SUCCESS: True | reason: done
+ANSWER: Russell Brand found guilty of rape and three sexual assaults (from https://www.bbc.com/news)
+TOKENS: 19308 in / 162 out
+(venv) rohitgupta@Rohits-MacBook-Air-3 web_agent % python -m examples.run_demo --cdp "Search the web for “Playwright Python connect_over_cdp” and open the official Playwright docs result. Quote the first paragraph."
+Goal: Search the web for “Playwright Python connect_over_cdp” and open the official Playwright docs result. Quote the first paragraph.
+[1] BBC News - Breaking news, video and the latest top stories from the U.S. and around the world https://www.bbc.com/news (current)
+[2] New tab chrome://new-tab-page/
+
+Open or click the tab in the debug Chrome window we started (not everyday Chrome). Everyday Chrome is not on port 9222.
+Then come back here and press Enter.
+Press Enter when that tab is ready… 

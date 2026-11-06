@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-221235-14c108",
+  "title": "Open https://en.wikipedia.org/wiki/Artificial_intelligence, click one li",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Open https://en.wikipedia.org/wiki/Artificial_intelligence, click one link in the first paragraph, then one more link, and tell me the path of page titles you visited.",
+      "url": "https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes",
+      "at": "2026-11-05T22:14:05+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Path: Artificial intelligence \u2192 Reason \u2192 Ren\u00e9 Descartes",
+      "url": "https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes",
+      "at": "2026-11-05T22:14:05+00:00"
+    }
+  ]
+}

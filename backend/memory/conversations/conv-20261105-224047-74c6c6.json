@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-224047-74c6c6",
+  "title": "Open https://mail.google.com/mail/u/0/#inbox and tell me the subject of ",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Open https://mail.google.com/mail/u/0/#inbox and tell me the subject of the newest email. Do not open or send mail. If you see a login page, say so and do not invent a subject.",
+      "url": "https://mail.google.com/mail/u/0/#inbox",
+      "at": "2026-11-05T22:41:27+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Spreadsheet shared with you: \u2018AI_Engineer_Jobs_India (1)\u2019",
+      "url": "https://mail.google.com/mail/u/0/#inbox",
+      "at": "2026-11-05T22:41:27+00:00"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-175510-5e8811",
+  "title": "Open https://the-internet.herokuapp.com/login with username tomsmith and",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Open https://the-internet.herokuapp.com/login with username tomsmith and password SuperSecretPassword!, then tell me if login succeeded and quote the flash message.",
+      "url": "https://the-internet.herokuapp.com/secure",
+      "at": "2026-11-05T17:56:20+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Login succeeded (redirected to /secure page). Flash message not explicitly visible in page text (only \"\u00d7\" close button and \"Welcome to the Secure Area...\" heading shown); search for typical flash text returned no matches.",
+      "url": "https://the-internet.herokuapp.com/secure",
+      "at": "2026-11-05T17:56:20+00:00"
+    }
+  ]
+}

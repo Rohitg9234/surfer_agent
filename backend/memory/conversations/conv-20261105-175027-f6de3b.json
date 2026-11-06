@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-175027-f6de3b",
+  "title": "Open https://github.com/microsoft/playwright and tell me the number of s",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Open https://github.com/microsoft/playwright and tell me the number of stars and the latest release name if visible.",
+      "url": "https://github.com/microsoft/playwright",
+      "at": "2026-11-05T17:50:58+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "99.4k stars; latest release v1.64.1 (from GitHub page search results)",
+      "url": "https://github.com/microsoft/playwright",
+      "at": "2026-11-05T17:50:58+00:00"
+    }
+  ]
+}

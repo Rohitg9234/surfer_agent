@@ -1,0 +1,18 @@
+{
+  "id": "conv-20261105-174615-1a4b86",
+  "title": "Open https://en.wikipedia.org/wiki/LinkedIn, find the History section, a",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Open https://en.wikipedia.org/wiki/LinkedIn, find the History section, and give me 4 dated facts.",
+      "url": "https://en.wikipedia.org/wiki/LinkedIn",
+      "at": "2026-11-05T17:46:51+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "4 dated facts from History section: 1. Founded December 2002 by Reid Hoffman et al. 2. Late 2003: Sequoia Capital Series A investment. 3. August 2004: Reached 1 million users. 4. March 2006: First month of profitability. (Source: search_page History section text)",
+      "url": "https://en.wikipedia.org/wiki/LinkedIn",
+      "at": "2026-11-05T17:46:51+00:00"
+    }
+  ]
+}
